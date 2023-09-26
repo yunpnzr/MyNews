@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="judul_berita">Judul berita</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="content_news">Lorem ipsum dolor sit amet</string>
+</resources>

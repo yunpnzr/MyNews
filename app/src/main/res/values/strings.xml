@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">MyNews</string>
+    <string name="title_favorite">Module Title</string>
+
+    <string name="no_link">Tidak ada link yang bisa ditampilkan</string>
+    <string name="no_title">Tidak ada Judul yang bisa ditampilkan</string>
+    <string name="no_author">No Author</string>
+    <string name="no_publishedAt">no time</string>
+    <string name="no_content">Tidak ada konten berita yang dapat ditampilkan</string>
+
+    <string name="favorite_menu_not_found">Fitur ini belum ada, tunggu ya...</string>
+    <string name="author_name">Author</string>
+    <string name="judul_berita">Judul</string>
+    <string name="published_at">20/03/2023</string>
+    <string name="published">Published at</string>
+    <string name="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum facilisis venenatis vestibulum. Maecenas sapien ante, sagittis non justo non, ornare semper nulla. Praesent ac faucibus risus. Mauris at posuere lectus. Nulla fermentum risus sit amet consequat fermentum. Morbi elit est, aliquet a feugiat vel, laoreet nec ante. Fusce lacinia tempor felis sit amet blandit. Fusce tempor eu risus ac vulputate. Pellentesque consectetur lectus id ipsum ullamcorper tempor porta fringilla quam.</string>
+    <string name="selengkapnya">Selengkapnya :</string>
+    <string name="link">Link</string>
+
+    <string name="splash_screen">MyNews</string>
+
+    <string name="news">News</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="daftar_berita">Daftar berita</string>
+    <string name="favorite">Favorite</string>
+    <string name="no_favorite_data">Tidak ada berita favorite</string>
+</resources>
