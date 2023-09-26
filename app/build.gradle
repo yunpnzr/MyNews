@@ -39,7 +39,7 @@ android {
     }
     lintOptions {
         disable 'NotificationPermission'
-    }
+    } //off notification
     dynamicFeatures = [':favorite']
 }
 
