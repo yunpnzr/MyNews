@@ -8,6 +8,8 @@ import com.example.core.data.network.api.ApiService
 import com.example.core.data.source.NewsRepository
 import com.example.core.domain.repository.INewsRepository
 import com.example.core.utlis.AppExecutors
+import net.sqlcipher.database.SQLiteDatabase
+import net.sqlcipher.database.SupportFactory
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import org.koin.android.ext.koin.androidContext
@@ -37,9 +39,13 @@ val networkModule = module {
 val dbModule = module {
     factory { get<NewsDB>().newsDao() }
     single {
+        val pass: ByteArray = SQLiteDatabase.getBytes("yunpznr".toCharArray())
+        val factory = SupportFactory(pass)
         Room.databaseBuilder(
             androidContext(), NewsDB::class.java, "News.db"
-        ).fallbackToDestructiveMigration().build()
+        ).fallbackToDestructiveMigration()
+            .openHelperFactory(factory)
+            .build()
     }
 }
 
