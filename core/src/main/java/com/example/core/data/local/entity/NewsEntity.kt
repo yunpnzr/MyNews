@@ -11,7 +11,6 @@ import kotlinx.parcelize.Parcelize
 @Entity(tableName = "news")
 data class NewsEntity(
     @PrimaryKey(autoGenerate = true)
-    @NonNull
     @ColumnInfo(name = "id")
     var id: Int = 0,
 
