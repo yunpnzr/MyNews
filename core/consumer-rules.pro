@@ -62,7 +62,7 @@
 -keep,allowobfuscation interface <1>
 
 -dontwarn kotlinx.**
-
+-dontwarn java.lang.invoke.StringConcatFactory
 
 ##---------------Begin: proguard configuration for Glide ----------
 -keep public class * implements com.bumptech.glide.module.GlideModule
