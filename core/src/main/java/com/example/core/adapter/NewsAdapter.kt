@@ -1,5 +1,6 @@
 package com.example.core.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -57,6 +58,7 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.ListViewHolder>() {
     private var newsList = ArrayList<News>()
     var onItemClick: ((News) -> Unit)? = null
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setDataFavorite(newListData: List<News>?) {
         if (newListData == null) return
         newsList.clear()
@@ -64,6 +66,7 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.ListViewHolder>() {
         notifyDataSetChanged()
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setDataNews(resource: Resource<List<News>>?) {
         if (resource is Resource.Success) {
             val newsList = resource.data
@@ -71,6 +74,9 @@ class NewsAdapter() : RecyclerView.Adapter<NewsAdapter.ListViewHolder>() {
                 this.newsList.clear()
                 this.newsList.addAll(it)
                 notifyDataSetChanged()
+                //val startPosition = this.newsList.size
+                //this.newsList.addAll(it)
+                //notifyItemRangeInserted(startPosition, it.size)
             }
         }
     }

@@ -7,7 +7,6 @@
     tools:context=".splash.SplashActivity">
 
     <View
-        android:id="@+id/view"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:background="@drawable/wave_top"
@@ -26,7 +25,6 @@
         app:srcCompat="@drawable/baseline_newspaper_24" />
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/splash_screen"
@@ -36,7 +34,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <View
-        android:id="@+id/view2"
         android:layout_width="wrap_content"
         android:layout_height="200dp"
         android:background="@drawable/wave_bottom"
